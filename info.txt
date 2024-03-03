@@ -1,0 +1,21 @@
+Como crear un componente personalizado en React.
+
+Para este ejemplo vamos a crear un Boton, y vamos a estar usando Typescript.
+
+- Primero definimos una interfaz llamada Props que a va a extender y heredar todas las propiedades que un elemento button html normal tendria, 
+como por ejemplo onClick, value, etc.
+
+- Definimos una propiedad personalizada llamada children que es de tipo ReactNode. ReactNode hace referencia a los Nodos en HTML. 
+Y un nodo no es mas que cualquier cosa que se pueda renderizar. Ya sea un elemento, un numero, un texto o incluso 1 espacio. 
+
+- Creamos un Componente llamado Boton y lo exportamos. Este componente va ser de tipo Functional Component y le pasamos nuestra interfaz. 
+
+- Destructuramos las propiedes de children, style y el resto de propiedades las definimos en props. 
+
+- La propiedad children es muy importante porque le estamos dando a nuestro componente la capacidad de renderizar cualquier elemento hijo
+
+- Devolvemos un elemento Button de html, y en el atributo style le pasamos una combinacion de los estilos por defecto y los estilos que vienen de fuera. 
+
+- ...props es un atributo o un objeto de propagacion que contiene todas las demas propiedades del boton. y se las pasamos.
+
+- renderizamos children o los elementos hijos dentro del boton y esta listo para ser usado.
